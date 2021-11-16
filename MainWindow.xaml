@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:xBalsat"
+         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="Working with ListView on WPF" Height="650" Width="900">
         <Window.Resources>

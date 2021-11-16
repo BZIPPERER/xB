@@ -31,11 +31,11 @@ namespace xBalsat
             {  
              new Person(){Name="Sukhit Prabhat",Address="India"},  
   
-             new Person(){Name="Adrian Smith",Address="US"} ,
+             new Person(){Name="Adrian Smith",Address="UK"} ,
 
              new Person(){Name="Benjamin Zipperer",Address="Germany"},
 
-             new Person(){Name="James Fuller", Address="UK"}
+             new Person(){Name="Erik Joergsen", Address="Denmark"}
 
             };  
             lstNames.ItemsSource = person;
@@ -65,7 +65,12 @@ namespace xBalsat
          // ButtonEvent Louder than dll
          private void btnNamesDel_Click(object sender, RoutedEventArgs e)  
         {  
-            Console.WriteLine("Megadeth everwhere");
+           InputDialogSample inputDialog = new InputDialogSample("Please enter name to delete user:",
+            "User-Dipsydummy");
+			if(inputDialog.ShowDialog() == true)
+				placeholder.Text = inputDialog.Answer;
         }  
+
+        
     }
 }

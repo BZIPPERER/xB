@@ -27,3 +27,5 @@ C:\Users\Benjamin\source\repo\xBalsat\obj\Debug\net5.0-windows\xBalsat.dll
 C:\Users\Benjamin\source\repo\xBalsat\obj\Debug\net5.0-windows\ref\xBalsat.dll
 C:\Users\Benjamin\source\repo\xBalsat\obj\Debug\net5.0-windows\xBalsat.pdb
 C:\Users\Benjamin\source\repo\xBalsat\obj\Debug\net5.0-windows\xBalsat.genruntimeconfig.cache
+C:\Users\Benjamin\source\repo\xBalsat\obj\Debug\net5.0-windows\InputDialogSample.baml
+C:\Users\Benjamin\source\repo\xBalsat\obj\Debug\net5.0-windows\InputDialogSample.g.cs

@@ -47,9 +47,25 @@ namespace xBalsat
         // ButtonEvent
          private void btnNames_Click(object sender, RoutedEventArgs e)  
         {  
-         person.Add(new Person() { Name = txtName.Text, Address = txtAddress.Text });  
-         txtName.Text = string.Empty;  
-         txtAddress.Text = string.Empty;  
+         if(txtAddress.Text.Equals("") 
+         || txtName.Text.Equals(""))
+         {
+             lblErrorMsg.Text = "Das war nichts. Nochmal!";
+
+         }  
+         else
+         {
+             lblErrorMsg.Text = "";
+             person.Add(new Person() { Name = txtName.Text, Address = txtAddress.Text });  
+             txtName.Text = string.Empty;  
+             txtAddress.Text = string.Empty;  
+         } 
+        
+        }  
+         // ButtonEvent Louder than dll
+         private void btnNamesDel_Click(object sender, RoutedEventArgs e)  
+        {  
+            Console.WriteLine("Megadeth everwhere");
         }  
     }
 }

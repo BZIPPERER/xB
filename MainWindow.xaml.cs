@@ -29,13 +29,13 @@ namespace xBalsat
             InitializeComponent();
             person = new ObservableCollection<Person>()  
             {  
-             new Person(){Name="Sukhit Prabhat",Address="India"},  
+             new Person(){Name="Sukhit Prabhat",Address="India", Salary="82000,00"},  
   
-             new Person(){Name="Adrian Smith",Address="UK"} ,
+             new Person(){Name="Adrian Smith",Address="UK", Salary="200000,01"} ,
 
-             new Person(){Name="Benjamin Zipperer",Address="Germany"},
+            
 
-             new Person(){Name="Erik Joergsen", Address="Denmark"}
+             new Person(){Name="Erik Joergsen", Address="Denmark", Salary="62000,11"}
 
             };  
             lstNames.ItemsSource = person;

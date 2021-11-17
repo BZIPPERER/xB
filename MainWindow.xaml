@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:xBalsat"
          WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="Working with ListView on WPF" Height="650" Width="900">
+        Title=" GUI ListView _WPF" Height="650" Width="900">
         <Window.Resources>
             <DataTemplate x:Key="PersonTemplate">
                 <StackPanel Orientation="Horizontal"
@@ -24,14 +24,13 @@
              <RowDefinition Height="*"></RowDefinition>  
          </Grid.RowDefinitions>  
          <StackPanel Grid.Row="0" Grid.Column="0" Margin="5,5,75,5">  
-             <TextBlock x:Name="lblName"  Width="199" Text="Name"
-             ></TextBlock>  
+             <TextBlock x:Name="lblName"  Width="199" Text="Name"></TextBlock>  
              <TextBox x:Name="txtName"  Width="199"></TextBox>  
-             <TextBlock x:Name="lblAddress" Width="199" Text="Address"></TextBlock>  
+             <TextBlock x:Name="lblAddress" Width="199" Text="Adresse"></TextBlock>  
              
              <TextBox x:Name="txtAddress"  Width="199"></TextBox>  
-            <TextBlock x:Name="lblErrorMsg" Foreground="Red" Width="199" Text=""></TextBlock>  
-            <TextBlock x:Name="placeholder" Foreground="Red" Width="199" Text=""></TextBlock>  
+             <TextBlock x:Name="lblErrorMsg" Foreground="Red" Width="199" Text=""></TextBlock>  
+             <TextBlock x:Name="placeholder" Foreground="Red" Width="199" Text=""></TextBlock>  
              <Button Grid.Column="0" Width="177" Height="24" Margin="5,5,5,5" x:Name="btnNames" Click="btnNames_Click" Content="Nutzer Anlegen"></Button> 
              <Button Grid.Column="0" Width="177" Height="24" Margin="5,5,5,5" x:Name="btnDel" Click="btnNamesDel_Click" Content="Nutzer Entfernen"></Button>   
         
@@ -41,9 +40,10 @@
          Margin="5,5,5,5" Grid.Column="1" Grid.Row="0">  
              <ListView.View>  
                  <GridView x:Name="grdNames">  
-                     <GridViewColumn Header="Name"  DisplayMemberBinding="{Binding Name}"/>  
-                     <GridViewColumn Header="Address"  DisplayMemberBinding="{Binding Address}"/>  
-                 </GridView>  
+                     <GridViewColumn Header="Name komplett"  Width="119" DisplayMemberBinding="{Binding Name}"/>  
+                     <GridViewColumn Header="Adresse"  Width="160" DisplayMemberBinding="{Binding Address}"/>
+                    <GridViewColumn Header="Gehalt (EURO,CENT)" Width="155" DisplayMemberBinding="{Binding Salary}" />
+                </GridView>  
              </ListView.View>  
          </ListView>  
     </Grid>

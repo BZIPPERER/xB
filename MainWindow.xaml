@@ -23,12 +23,14 @@
          <Grid.RowDefinitions>  
              <RowDefinition Height="*"></RowDefinition>  
          </Grid.RowDefinitions>  
-         <StackPanel Grid.Row="0" Grid.Column="0" Margin="5,5,75,5">  
-             <TextBlock x:Name="lblName"  Width="199" Text="Name"></TextBlock>  
-             <TextBox x:Name="txtName"  Width="199"></TextBox>  
-             <TextBlock x:Name="lblAddress" Width="199" Text="Adresse"></TextBlock>  
-             
-             <TextBox x:Name="txtAddress"  Width="199"></TextBox>  
+         <StackPanel Grid.Row="0" Grid.Column="0" Margin="5,5,75,5">
+            <TextBlock x:Name="lblName" Margin="5,15,5,0" Width="199" Text="Name"></TextBlock>
+            <TextBox x:Name="txtName"   Margin="5,10,5,0" Width="199"></TextBox>
+            <TextBlock x:Name="lblAddress" Margin="5,10,5,0" Width="199" Text="Adresse"></TextBlock>  
+             <TextBox x:Name="txtAddress"  Width="199"></TextBox>
+
+             <TextBlock x:Name="lblSalary" Width="199" Text="Gehalt"></TextBlock>
+             <TextBox   x:Name="txtSalary"  Width="199"></TextBox>
              <TextBlock x:Name="lblErrorMsg" Foreground="Red" Width="199" Text=""></TextBlock>  
              <TextBlock x:Name="placeholder" Foreground="Red" Width="199" Text=""></TextBlock>  
              <Button Grid.Column="0" Width="177" Height="24" Margin="5,5,5,5" x:Name="btnNames" Click="btnNames_Click" Content="Nutzer Anlegen"></Button> 
